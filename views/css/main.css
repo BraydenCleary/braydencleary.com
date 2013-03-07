@@ -1,8 +1,75 @@
-.welcome{
-	border: 1px solid black;
+body {
+	font-family: 'PT Serif Caption', serif;	
+	margin: 0;
 }
 
-p {
-	color: red;
+#brayden-image {
+    width: 300px; /* you can use % */
+    height: auto;
+    margin-left: 5px;
+    margin-top: 20px;
+    float: left;
 }
 
+#navigation {
+	top: 0;
+	margin-left: 0;
+	border-bottom: 1px dotted grey;
+	text-align: center;
+}
+
+.title {
+	font-size: 32px;	
+	margin-left: 30px;
+	margin-right: 28px;
+}
+
+.nav {
+	padding-left: 0;
+	display: inline;
+
+}
+
+.nav li {
+	list-style: none;
+	display: inline;
+	border-right: 1px solid grey;
+	padding: 0 20px;
+}
+
+.nav li a {
+	text-decoration: none;
+	margin-right: 0px;
+	color: #76767C;
+}
+
+.nav li a:hover {
+	color: #522A72;
+}
+
+.find-me {
+	float: right;
+	margin: 10px 20px 0 0;
+}
+
+.find-me h4 {
+	margin: 0 ;
+}
+
+.find-me ul {
+	list-style: none;
+}
+
+.find-me a {
+	text-decoration: none;
+	color: #76767C;
+}
+
+.find-me img {
+	height: 20px;
+	width: 20px;
+}
+
+.about {
+	clear: both;
+}
