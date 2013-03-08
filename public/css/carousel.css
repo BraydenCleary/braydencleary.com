@@ -17,8 +17,9 @@ ul#errors {
   width: 360px;
   height: 228px;
   float: right;
-  
-  margin-right: 200px;
+  box-shadow: 3px 3px 4px #000;
+  margin-right: 350px;
+  border: 1px solid grey;
 }
  
 .carousel{
