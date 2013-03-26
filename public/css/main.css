@@ -3,14 +3,14 @@ body {
 	margin: 0;
 	background-image: url('/images/subtle_white_feathers.png');
 	font-weight: bold;
+	width: 100%;
 }
 
 #brayden-image {
     width: 300px; /* you can use % */
     height: auto;
-    margin-left: 25px;
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-top: 70px;
+    margin-left: 5%;
     float: left;
 }
 
@@ -24,13 +24,14 @@ body {
 
 .title {
 	font-size: 32px;	
-	margin-left: 30px;
+	margin-left: 5%;
 	margin-right: 28px;
 	color: #E9E9E7;
 }
 
 .nav {
-	padding-left: 0;
+	position: absolute;
+	right: 0;
 	display: inline;
 }
 
@@ -56,54 +57,46 @@ body {
 	color: #522A72;
 }
 
-.find-me {
-	float: right;
-	margin: 25px 120px 0 0;
+a:hover {
+	color: #522A72;
 }
 
-.find-me h4 {
-	margin: 0 ;
-}
-
-.find-me ul {
-	list-style: none;
-}
-
-.find-me a {
+a {
 	text-decoration: none;
 	color: #76767C;
 }
 
-.find-me img {
-	height: 20px;
-	width: 20px;
+h2{
+	text-align: center;
+	color: #542C76;
 }
 
 .intro {
-	position: relative;
-	width: 900px;
-	margin-top: 50px;
-
+	float: left;
+	width: 27%;
+	margin-top: 45px;
+	margin-left: 5%;
 }
 
-.intro p {
-	
+.about-me{
+	float: left;
+	width: 27%;
+	margin-top: 45px;
+	margin-left: 5%;
 }
 
-.intro a {
-	text-decoration: none;
-	color: #76767C;
+.things-done{
+	float: left;
+	width: 27%;
+	margin-top: -15px;
+	margin-left: 5%;
 }
 
-.intro a:hover {
-	color: #522A72;
-}
-}
-
-.about {
-	clear: both;
+.things-like{
+		float: left;
+		width: 27%;
+		margin-left: 5%;
+		margin-top: -15px;
 }
 
-#about {
-	margin-top: 50px;
-}
+//Mobile View

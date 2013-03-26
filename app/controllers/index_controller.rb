@@ -1,3 +1,3 @@
 get '/' do
-  erb :bootstrap
+  erb :index
 end
