@@ -6,10 +6,18 @@ body {
 	width: 100%;
 }
 
+.content{
+	line-height: 160%;
+}
+
+.picture{
+	width: 25%;
+}
+
 #brayden-image {
-    width: 300px; /* you can use % */
+    max-width: 100%;
     height: auto;
-    margin-top: 70px;
+    margin-top: 100px;
     margin-left: 5%;
     float: left;
 }
@@ -69,34 +77,49 @@ a {
 h2{
 	text-align: center;
 	color: #542C76;
+	font-size: 2em;
+	margin: 0;
 }
 
 .intro {
 	float: left;
-	width: 27%;
-	margin-top: 45px;
+	width: 30%;
+	margin-top: 80px;
 	margin-left: 5%;
 }
+
 
 .about-me{
 	float: left;
-	width: 27%;
-	margin-top: 45px;
+	width: 30%;
+	margin-top: 80px;
 	margin-left: 5%;
 }
 
+
 .things-done{
 	float: left;
-	width: 27%;
-	margin-top: -15px;
+	width: 30%;
+	margin-top: 10px;
 	margin-left: 5%;
 }
 
 .things-like{
-		float: left;
-		width: 27%;
-		margin-left: 5%;
-		margin-top: -15px;
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+	margin-top: 10px;
+		
 }
 
-//Mobile View
+.highlight {
+
+}
+
+//Mobile View//
+@media screen and (max-width: 1200px) {
+	#content {
+		font-size: 1pt;
+		background-color: red;
+	}
+}
