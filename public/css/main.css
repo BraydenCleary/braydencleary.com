@@ -1,125 +1,154 @@
-body {
-	font-family: 'PT Serif Caption', serif;	
-	margin: 0;
-	background-image: url('/images/subtle_white_feathers.png');
-	font-weight: bold;
-	width: 100%;
-}
-
-.content{
-	line-height: 160%;
-}
-
-.picture{
-	width: 25%;
-}
-
-#brayden-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-left: 5%;
-    float: left;
-}
-
-#navigation {
-	z-index: 999;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	background-image: url('/images/wild_oliva.png');
-}
-
-.title {
-	font-size: 32px;	
-	margin-left: 5%;
-	margin-right: 28px;
-	color: #E9E9E7;
+body { 
+  background: url('/images/seamlesstexture5_1200.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Cherry Swash', cursive;
 }
 
 .nav {
-	position: absolute;
-	right: 0;
-	display: inline;
+	width: 100%;
+	height: 70px;
 }
 
-.nav img {
+.name {
+	float: left;
+	width: 50%;
+	font-size: 3.5em;
+	font-color: #eee;
+	margin: 0 0 10px 5%;
+}
+
+.find-me {	
+	width: 40%;
+	float: right;
+	padding-top: 25px;
+}
+
+.me-everywhere{
+	color: #4E276E;
+	float: right;
+}
+
+.find-me ul {
+	float: right;
+}
+
+.find-me img {
 	height: 20px;
 	width: 20px;
 }
 
-.nav li {
+.find-me li {
 	list-style: none;
 	display: inline;
-	border-right: 1px solid grey;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
-.nav li a {
+.find-me li a {
 	text-decoration: none;
 	margin-right: 0px;
 	color: #E9E9E7;
 }
 
-.nav li a:hover {
+.find-me li a:hover {
 	color: #522A72;
 }
 
-a:hover {
-	color: #522A72;
+#picture-container {
+	position: absolute;
+	width: 27%;
+	margin-left: 2%;
+	margin-top: 40px;
 }
 
-a {
-	text-decoration: none;
-	color: #76767C;
+.self-picture {
+	max-width: 100%;
+	z-index: -1;
 }
 
-h2{
-	text-align: center;
-	color: #542C76;
-	font-size: 2em;
-	margin: 0;
+article{
+	width: 50%;
+	margin-right: 10%;
+	float: right;
+	margin-top: 50px;
 }
 
-.intro {
-	float: left;
-	width: 30%;
-	margin-top: 80px;
-	margin-left: 5%;
+article p{
+	font-size: 1.4em;
 }
 
-
-.about-me{
-	float: left;
-	width: 30%;
-	margin-top: 80px;
-	margin-left: 5%;
+@media (max-width: 980px) {
+	.name {
+		font-size: 2.5em;
+	}
+	.find-me {
+		padding-top: 5px;
+		float: left;
+	}
+	.me-everywhere{
+		display: none;
+	}
+	article{
+		margin-top: 20px;
+	}
+	article p{
+		font-size: 1.2em ;
+	}
 }
 
-
-.things-done{
-	float: left;
-	width: 30%;
-	margin-top: 10px;
-	margin-left: 5%;
+@media (max-width: 680px){
+	.name{
+		width: 70%;
+		margin: 20px 5% 0 0;
+		float: right;
+		text-align: center;
+		font-size: 2.2em;
+	}
+	.find-me{
+		margin: 30px 0 0 -5%;
+		width: 80%;
+		float: left;
+		text-align: center;
+	}
+	#picture-container{
+		float: left;
+		width: 20%;
+		left: 2%;
+		top: 2%;
+		margin: 0;
+	}
+	.self-picture{
+		float: left;
+	}
+	article{
+		clear: both;
+		float: right;
+		margin: 50px 10% 0 10%;
+		width: 80%;
+	}
 }
 
-.things-like{
-	float: left;
-	width: 30%;
-	margin-left: 5%;
-	margin-top: 10px;
-		
-}
-
-.highlight {
-
-}
-
-//Mobile View//
-@media screen and (max-width: 1200px) {
-	#content {
-		font-size: 1pt;
-		background-color: red;
+@media (max-width: 605px){
+	#picture-container{
+		position: static;
+		width: 40%;
+		margin: 0 30%;
+	}
+	.name{
+		width: 100%;
+		margin: 0;
+		font-size: 1.9em;
+	}
+	.find-me{
+		width: 100%;
+		float: left;
+		margin: 0 0 0 -30%;
+	}
+	article{
+		float: left;
+		margin: 0 10% 0 10%;
+		font-size: .8em;
 	}
 }
